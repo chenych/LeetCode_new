@@ -3,7 +3,7 @@ package com.chen.leetcode.stack.easy;
 import java.util.Stack;
 
 /**
- * 1047. 删除字符串中的所有相邻重复项
+ * 1047. 删除字符串中的所有相邻重复项 https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/
  * 给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。
  * <p>
  * 在 S 上反复执行重复项删除操作，直到无法继续删除。
@@ -46,22 +46,7 @@ public class removeDuplicates {
     public static void main(String[] args) {
         removeDuplicates removeDuplicates = new removeDuplicates();
         System.out.println(removeDuplicates.removeDuplicates("abbaca"));
-        System.out.println(removeDuplicates.removeDuplicates2("abbaca"));
+
     }
 
-    public String removeDuplicates2(String S) {
-        Stack<Character> stack = new Stack<Character>();
-        for (char c : S.toCharArray()){
-            if(stack.isEmpty() || stack.peek()!=c){
-                stack.push(c);
-            } else {
-                stack.pop();
-            }
-        }
-        StringBuffer sb = new StringBuffer();
-        for (Character c : stack) {
-            sb.append(c);
-        }
-        return sb.toString();
-    }
 }
