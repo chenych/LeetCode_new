@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.Stack;
 
 /**
- * 1249. 移除无效的括号
+ * 1249. 移除无效的括号 https://leetcode-cn.com/problems/minimum-remove-to-make-valid-parentheses/
  * 给你一个由 '('、')' 和小写字母组成的字符串 s。
  * <p>
  * 你需要从字符串中删除最少数目的 '(' 或者 ')' （可以删除任意位置的括号)，使得剩下的「括号字符串」有效。

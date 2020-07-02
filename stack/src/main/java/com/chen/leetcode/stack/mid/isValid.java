@@ -1,9 +1,7 @@
 package com.chen.leetcode.stack.mid;
 
-import java.util.Stack;
-
 /**
- * 1003. 检查替换后的词是否有效
+ * 1003. 检查替换后的词是否有效 https://leetcode-cn.com/problems/check-if-word-is-valid-after-substitutions/
  * 给定有效字符串 "abc"。
  * <p>
  * 对于任何有效的字符串 V，我们可以将 V 分成两个部分 X 和 Y，使得 X + Y（X 与 Y 连接）等于 V。（X 或 Y 可以为空。）那么，X + "abc" + Y 也同样是有效的。
@@ -45,10 +43,10 @@ import java.util.Stack;
  */
 public class isValid {
     public boolean isValid(String S) {
-        while (S.indexOf("abc")>-1){
-            S = S.replaceAll("abc","").trim();
+        while (S.indexOf("abc") > -1) {
+            S = S.replaceAll("abc", "").trim();
         }
-        return S.length()==0;
+        return S.length() == 0;
     }
 
     public static void main(String[] args) {

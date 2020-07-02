@@ -3,7 +3,7 @@ package com.chen.leetcode.stack.mid;
 import java.util.Stack;
 
 /**
- * 856. 括号的分数
+ * 856. 括号的分数 https://leetcode-cn.com/problems/score-of-parentheses/
  * 给定一个平衡括号字符串 S，按下述规则计算该字符串的分数：
  * <p>
  * () 得 1 分。
